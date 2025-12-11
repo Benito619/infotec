@@ -21,6 +21,8 @@ services:
       - LARAVEL_DATABASE_PASSWORD=b1tnam1_my@pp 
     ports: 
      - '8000:8000' 
+    command: php artisan serve --host=0.0.0.0 --port=8000
+    restart: unless-stopped
     volumes: 
       - './src:/app' 
     depends_on: 
