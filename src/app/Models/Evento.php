@@ -1,15 +1,10 @@
 <?php
-
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Model;
 
-class Evento extends Model
-{
-    // Especifica el nombre de la tabla en la base de datos
-    protected $table = 'eventos';
 
-    // Define los campos que pueden ser asignados de forma masiva (rellenables)
+class Evento extends Model {
+    protected $table = 'eventos';
     protected $fillable = [
         'titulo',
         'descripcion',
